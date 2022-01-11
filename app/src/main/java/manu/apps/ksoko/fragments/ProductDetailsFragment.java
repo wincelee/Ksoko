@@ -98,8 +98,8 @@ public class ProductDetailsFragment extends Fragment implements View.OnClickList
         tvTitle.setText(productDetailsFragmentArgs.getTitle());
         tvDescription.setText(productDetailsFragmentArgs.getDescription());
 
-        ((ToolbarInterface) requireActivity()).setToolbarTitle(String.format("%s%s%s",
-                requireActivity().getString(R.string.usd), requireActivity().getString(R.string.space),
+        ((ToolbarInterface) requireActivity()).setToolbarTitle(String.format("%s %s",
+                requireActivity().getString(R.string.usd),
                 Config.numberFormatter(Double.parseDouble(productDetailsFragmentArgs.getPrice()))));
 
         btnBuyWithGPay.setOnClickListener(this);

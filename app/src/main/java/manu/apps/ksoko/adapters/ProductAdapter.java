@@ -55,6 +55,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.tvPrice.setText(String.format("%s%s%s", context.getString(R.string.usd),
                 context.getString(R.string.space), Config.numberFormatter(currentProduct.getPrice())));
 
+
         Glide.with(context)
                 .load(currentProduct.getPhoto())
                 .fitCenter()
