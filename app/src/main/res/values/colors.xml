@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#500c6c</color>
+    <color name="primaryLightColor">#9357ab</color>
+    <color name="primaryDarkColor">#1e0428</color>
+    <color name="secondaryColor">#1c5f74</color>
+    <color name="secondaryLightColor">#6297a7</color>
+    <color name="secondaryDarkColor">#092027</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="colorBlack80">#CC000000</color>
+    <color name="colorBlack60">#CC000000</color>
+    <color name="colorBlack50">#80000000</color>
+    <color name="colorBlack40">#66000000</color>
+    <color name="colorBlack30">#4D000000</color>
+    <color name="colorBlack15">#26000000</color>
+    <color name="colorBlack20">#0D000000</color>
+    <color name="colorBlack10">#0D000000</color>
+    <color name="colorBlack5">#0D000000</color>
+
+    <color name="whiteColor">#ffffff</color>
+
+    <color name="mcvProductsRippleColor">#26164A5A</color>
+</resources>

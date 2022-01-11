@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:id="@+id/mcv_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/MaterialTheme"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp"
+    app:rippleColor="@color/mcvProductsRippleColor"
+    app:strokeWidth="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imv_product"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:importantForAccessibility="no"
+            android:padding="1dp"
+            android:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imv_product"
+            android:paddingStart="5dp"
+            android:paddingEnd="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/artifika"
+                android:text="@string/title"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/pt_serif_caption"
+                android:paddingBottom="10dp"
+                android:text="@string/zero"
+                android:textColor="@android:color/black"
+                ndroid:paddingTop="10dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

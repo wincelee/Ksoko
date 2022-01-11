@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amita</item>
+        <item>@font/andada</item>
+        <item>@font/artifika</item>
+        <item>@font/carter_one</item>
+        <item>@font/nobile</item>
+        <item>@font/pt_serif_caption</item>
+    </array>
+</resources>

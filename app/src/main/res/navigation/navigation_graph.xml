@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/nav_products_fragment">
+
+    <fragment
+        android:id="@+id/nav_products_fragment"
+        android:name="manu.apps.ksoko.fragments.ProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products">
+
+        <action
+            android:id="@+id/action_product_to_product_details_fragment"
+            app:destination="@id/nav_product_details_fragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right" >
+
+            <argument
+                android:name="id"
+                android:defaultValue="0"
+                app:argType="string" />
+
+            <argument
+                android:name="title"
+                android:defaultValue="n/a"
+                app:argType="string" />
+
+            <argument
+                android:name="description"
+                android:defaultValue="n/a"
+                app:argType="string" />
+
+            <argument
+                android:name="price"
+                android:defaultValue="0"
+                app:argType="string" />
+
+            <argument
+                android:name="photo"
+                android:defaultValue="n/a"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_details_fragment"
+        android:name="manu.apps.ksoko.fragments.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details">
+
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="string" />
+
+        <argument
+            android:name="title"
+            android:defaultValue="n/a"
+            app:argType="string" />
+
+        <argument
+            android:name="description"
+            android:defaultValue="n/a"
+            app:argType="string" />
+
+        <argument
+            android:name="price"
+            android:defaultValue="0"
+            app:argType="string" />
+
+        <argument
+            android:name="photo"
+            android:defaultValue="n/a"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
